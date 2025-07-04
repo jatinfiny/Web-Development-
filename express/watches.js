@@ -3,8 +3,8 @@ import os from "os";
 const app = express();
 console.log("hostname", os.hostname());
 app.use(express.json());
-const port = process.env.PORT || 3000;
-import "dotenv/config";
+const port = 3000;
+//import "dotenv/config";
 
 app.listen(port, () => {
   console.log("listening to port : ", port);
